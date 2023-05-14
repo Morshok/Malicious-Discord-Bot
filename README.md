@@ -26,7 +26,7 @@ ___
 To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. 
 Next step is heading over to the "Bot" tab, and press "Add bot". The next step is adding the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope, and then "Administrator" as the bot permission. Then, simply click on the generated link and specify what server the bot should be invited into. **NOTE:** This exploit will only work if the bot is given "Administrator" permissions. One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab.
 
-<br /><br />
+<br />
 
 Now this repository can be cloned into any directory you desire. One last thing is to run "npm install dotenv" inside of this repository, and then create a key-value pair inside of the generated ".env" file called DISCORD_TOKEN. The value of DISCORD_TOKEN should be the "Bot Token" fetched from the [Discord Developer Portal](https://discord.com/developers/applications).
 Some other important fields to fill in inside of the ".env" file is the CLIENT_ID, GUILD_ID and USER_ID, the id of the user whose privileges should be escalated.
@@ -38,3 +38,5 @@ ___
 If the previous steps have been followed, now is the time to open up a terminal and run "node deploy-commands". This is simply to register the SlashCommands to the client. Then run "node ." or "node index.js", the result will be the same, and enjoy exploiting your own server! :stuck_out_tongue_winking_eye:
 
 ___
+
+**Final Note: ** Images to facilitate the setup process as well as images showcasing how to use the application will be added in due time.
