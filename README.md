@@ -24,7 +24,9 @@ ___
 
 ### Setup:
 To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. 
-Next step is heading over to the "Bot" tab, and press "Add bot". The next step is adding the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope, and then "Administrator" as the bot permission. Then, simply click on the generated link and specify what server the bot should be invited into. **NOTE:** This exploit will only work if the bot is given "Administrator" permissions. One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab.
+Next step is heading over to the "Bot" tab, and press "Add bot". The next step is adding the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope, and then "Administrator" as the bot permission. Then, simply click on the generated link and specify what server the bot should be invited into. One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab.
+<br />
+**NOTE:** This exploit will only work if the bot is given "Administrator" permissions.
 
 <br />
 
