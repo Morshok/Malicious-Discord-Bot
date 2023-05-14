@@ -39,4 +39,4 @@ If the previous steps have been followed, now is the time to open up a terminal 
 
 ___
 
-**Final Note: ** Images to facilitate the setup process as well as images showcasing how to use the application will be added in due time.
+**Final Note:** Images to facilitate the setup process as well as images showcasing how to use the application will be added in due time.
