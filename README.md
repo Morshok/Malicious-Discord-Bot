@@ -28,8 +28,6 @@ Next step is heading over to the "Bot" tab, and press "Add bot". The next step i
 <br />
 **NOTE:** This exploit will only work if the bot is given "Administrator" permissions.
 
-<br />
-
 Now this repository can be cloned into any directory you desire. One last thing is to run "npm install dotenv" inside of this repository, and then create a key-value pair inside of the generated ".env" file called DISCORD_TOKEN. The value of DISCORD_TOKEN should be the "Bot Token" fetched from the [Discord Developer Portal](https://discord.com/developers/applications).
 Some other important fields to fill in inside of the ".env" file is the CLIENT_ID, GUILD_ID and USER_ID, the id of the user whose privileges should be escalated.
 
