@@ -61,7 +61,8 @@ Some other important fields to fill in inside of the ".env" file includes:
   - Can be found inside the Discord Application by first heading over to Settings -> App Settings -> Advanced. 
   - Then turn on Developer Mode:
     ![Developer Mode](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/developer_mode.png)
-  - Then simply right click on top of your server's name in the top left corner, and an option to copy the Server ID will appear:
+  - Then simply right click on top of your server's name in the top left corner. 
+  - An option to copy the Server ID will appear:
     ![Server ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_server_id.png)
   - Pressing it will copy the Server ID to your clipboard.
 - USER_ID, the id of the user whose privileges should be escalated.
