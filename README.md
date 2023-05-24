@@ -23,20 +23,75 @@ This project utilizes the following technologies:
 ___
 
 ### Setup:
-To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. 
-Next step is heading over to the "Bot" tab, and press "Add bot". The next step is adding the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope, and then "Administrator" as the bot permission. Then, simply click on the generated link and specify what server the bot should be invited into. One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab.
+To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. The image down below illustrates exactly this: 
+
+<br /><br />
+![New Application](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/new_application.png)
+<br /><br />
+
+Next step is heading over to the "Bot" tab, and pressing "Add bot". <br />
+Then add the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope:
+
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/scope.png)
+<br /><br />
+
+Select "Administrator" as the bot permission:
+
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_permissions.png)
+<br /><br />
+
+Then simply click on the generated link (here greyed out as a security measure) and specify what server the bot should be invited into. <br /><br />
+One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab, as can be seen in the image provided down below:
+
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_token.png)
+<br /><br />
+
+Now this repository can be cloned into any directory you desire. One last thing is to run:
+```bash
+npm install dotenv
+```
+inside of this repository, and then create a key-value pair inside of the generated ".env" file called DISCORD_TOKEN. The value of DISCORD_TOKEN should be the "Bot Token" fetched from the [Discord Developer Portal](https://discord.com/developers/applications). <br /><br />
+Some other important fields to fill in inside of the ".env" file includes:
+- CLIENT_ID, called APPLICATION ID by the discord API. 
+  - Can be found under the tab "General Information" on the [Discord Developer Portal](https://discord.com/developers/applications).
+- GUILD_ID, the id of the server which the bot is to be invited into
+  - Can be found inside the Discord Application by first heading over to Settings -> App Settings -> Advanced. 
+  - Then turn on Developer Mode:
+    ![Developer Mode](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/developer_mode.png)
+  - Then simply right click on top of your server's name in the top left corner, and an option to copy the Server ID will appear:
+    ![Server ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_server_id.png)
+  - Pressing it will copy the Server ID to your clipboard.
+- USER_ID, the id of the user whose privileges should be escalated.
+  - Can be found inside the Discord Application by first heading over to Settings -> My Account.
+  - Then simply press the three dots next to your user profile, and then press "Copy User ID":
+    ![User ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_user_id.png)
+  - This places your "User ID" onto the clipboard.
+
 <br />
+
 **NOTE:** This exploit will only work if the bot is given "Administrator" permissions.
-
-Now this repository can be cloned into any directory you desire. One last thing is to run "npm install dotenv" inside of this repository, and then create a key-value pair inside of the generated ".env" file called DISCORD_TOKEN. The value of DISCORD_TOKEN should be the "Bot Token" fetched from the [Discord Developer Portal](https://discord.com/developers/applications).
-Some other important fields to fill in inside of the ".env" file is the CLIENT_ID, GUILD_ID and USER_ID, the id of the user whose privileges should be escalated.
-
 ___
 
 ### How To Use The Application:
 
-If the previous steps have been followed, now is the time to open up a terminal and run "node deploy-commands". This is simply to register the SlashCommands to the client. Then run "node ." or "node index.js", the result will be the same, and enjoy exploiting your own server! :stuck_out_tongue_winking_eye:
+If the previous steps have been followed, now is the time to open up a terminal and run:
+```
+node deploy-commands
+```
+This is simply to register the SlashCommands to the client. <br /><br />
+Then run:
+```
+node .
+```
+"node ." 
+or 
+```
+node index.js
+```
+The result will be the same. <br />
+I hope you enjoy exploiting your own server! :stuck_out_tongue_winking_eye:
 
 ___
-
-**Final Note:** Images to facilitate the setup process as well as images showcasing how to use the application will be added in due time.
