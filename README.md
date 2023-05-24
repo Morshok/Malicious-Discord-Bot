@@ -86,7 +86,6 @@ Then run:
 ```
 node .
 ```
-"node ." 
 or 
 ```
 node index.js
