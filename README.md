@@ -60,15 +60,15 @@ Some other important fields to fill in inside of the ".env" file includes:
 - GUILD_ID, the id of the server which the bot is to be invited into
   - Can be found inside the Discord Application by first heading over to Settings -> App Settings -> Advanced. 
   - Then turn on Developer Mode:
-    ![Developer Mode](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/developer_mode.png)
+  - ![Developer Mode](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/developer_mode.png)
   - Then simply right click on top of your server's name in the top left corner. 
   - An option to copy the Server ID will appear:
-    ![Server ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_server_id.png)
+  - ![Server ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_server_id.png)
   - Pressing it will copy the Server ID to your clipboard.
 - USER_ID, the id of the user whose privileges should be escalated.
   - Can be found inside the Discord Application by first heading over to Settings -> My Account.
   - Then simply press the three dots next to your user profile, and then press "Copy User ID":
-    ![User ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_user_id.png)
+  - ![User ID](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/copy_user_id.png)
   - This places your "User ID" onto the clipboard.
 
 <br />
