@@ -23,7 +23,13 @@ This project utilizes the following technologies:
 ___
 
 ### Setup:
-To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. The image down below illustrates exactly this: 
+To setup and try out the exploit yourselves, the first steps are to first and foremost run the following commando:
+
+```bash
+git clone https://github.com/Morshok/Malicious-Discord-Bot.git
+```
+
+Then, head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. The image down below illustrates exactly this: 
 
 <br /><br />
 ![New Application](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/new_application.png)
