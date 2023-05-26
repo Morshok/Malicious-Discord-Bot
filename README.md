@@ -23,42 +23,36 @@ This project utilizes the following technologies:
 ___
 
 ### Setup:
-To setup and try out the exploit yourselves, the first steps are to first and foremost run the following commando:
+To setup and try out the exploit yourselves, the first step is to head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. The image down below illustrates exactly this: 
+<br /><br />
+![New Application](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/new_application.png)
+<br /><br />
+Next step is heading over to the "Bot" tab, and pressing "Add bot". <br />
+Then add the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope:
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/scope.png)
+<br /><br />
+Select "Administrator" as the bot permission:
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_permissions.png)
+<br /><br />
+Then simply click on the generated link (here greyed out as a security measure) and specify what server the bot should be invited into. <br /><br />
+One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab, as can be seen in the image provided down below:
+<br /><br />
+![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_token.png)
+<br /><br />
+Now this repository can be cloned into any directory you desire, running the command:
 
 ```bash
 git clone https://github.com/Morshok/Malicious-Discord-Bot.git
 ```
 
-Then, head over to the [Discord Developer Portal](https://discord.com/developers/applications), login, and create a New Application. The image down below illustrates exactly this: 
+One last thing is to run:
 
-<br /><br />
-![New Application](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/new_application.png)
-<br /><br />
-
-Next step is heading over to the "Bot" tab, and pressing "Add bot". <br />
-Then add the bot to your discord server. This can be done by going into the "OAuth - URL Generator" tab, selecting "bot" as the scope:
-
-<br /><br />
-![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/scope.png)
-<br /><br />
-
-Select "Administrator" as the bot permission:
-
-<br /><br />
-![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_permissions.png)
-<br /><br />
-
-Then simply click on the generated link (here greyed out as a security measure) and specify what server the bot should be invited into. <br /><br />
-One final thing that is needed from the [Discord Developer Portal](https://discord.com/developers/applications) is the "Bot Token", which can be found in the "Bot" tab, as can be seen in the image provided down below:
-
-<br /><br />
-![Bot Token](https://github.com/Morshok/readme-images/blob/master/Malicious-Discord-Bot/bot_token.png)
-<br /><br />
-
-Now this repository can be cloned into any directory you desire. One last thing is to run:
 ```bash
 npm install dotenv
 ```
+
 inside of this repository, and then create a key-value pair inside of the generated ".env" file called DISCORD_TOKEN. The value of DISCORD_TOKEN should be the "Bot Token" fetched from the [Discord Developer Portal](https://discord.com/developers/applications). <br /><br />
 Some other important fields to fill in inside of the ".env" file includes:
 - CLIENT_ID, called APPLICATION ID by the discord API. 
@@ -78,6 +72,8 @@ Some other important fields to fill in inside of the ".env" file includes:
   - This places your "User ID" onto the clipboard.
 
 <br />
+An example of such a ".env" file can be found within this repository inside of the ".env.example" file. 
+<br /><br />
 
 **NOTE:** This exploit will only work if the bot is given "Administrator" permissions.
 ___
